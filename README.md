@@ -183,11 +183,27 @@ Envio do relatório por e-mail
 
 # 📸 Demonstração
 
-## 📸 Dashboard
+## 📊 Dashboard Geral
 
-O dashboard apresenta os principais indicadores em tempo real, incluindo satisfação dos clientes, ranking de consultores, filtros e gráficos interativos.
+![Dashboard](images/dashboard-geral.png)
 
-![Dashboard](images/dashboard.png)
+---
+
+## 📈 Volume de Atendimentos por Consultor
+
+![Volume](images/volume-atendimentos.png)
+
+---
+
+## ⭐ Performance Média
+
+![Performance](images/performance.png)
+
+---
+
+## 💡 Sugestões de Melhoria
+
+![Sugestões](images/sugestoes.png)
 
 ---
 
@@ -196,6 +212,12 @@ O dashboard apresenta os principais indicadores em tempo real, incluindo satisfa
 Workflow responsável pela automação completa do processo de coleta, análise e geração dos feedbacks utilizando IA Generativa.
 
 ![Workflow](images/workflow.png)
+
+---
+
+## 🎥 Demonstração
+
+![Demo](gifs/demo.gif)
 
 ---
 
