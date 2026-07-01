@@ -227,7 +227,7 @@ Após a análise dos dados, o sistema envia automaticamente um relatório person
 
 ![Email](images/email.png)
 
-# 📈 Resultados
+# 📈 Resultados 
 
 ✅ Redução do trabalho manual
 
