@@ -47,6 +47,41 @@ Email Automático
 
 ---
 
+## Fluxograma
+
+                 Google Forms
+                       │
+                       ▼
+               Google Sheets
+                       │
+                       ▼
+                n8n Workflow
+                       │
+        ┌──────────────┼──────────────┐
+        │              │              │
+        ▼              ▼              ▼
+ Limpeza dos      Tratamento      Cálculo
+    Dados          dos Dados      de Score
+        │
+        ▼
+   IA Generativa
+(Gemini/OpenAI)
+        │
+        ▼
+ Feedback Inteligente
+        │
+        ▼
+ Atualização da Planilha
+        │
+        ▼
+ Dashboard em Tempo Real
+ (Python + Streamlit)
+        │
+        ▼
+ E-mail Automático
+
+ ---
+ 
 ## 🛠 Tecnologias Utilizadas
 
 - Python
