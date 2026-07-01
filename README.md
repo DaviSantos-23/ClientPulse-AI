@@ -1,3 +1,4 @@
+Python 3.12 | Streamlit | Gemini | OpenAI | n8n | Google Sheets | License MIT
 # 🚀 ClientPulse-AI
 
 Sistema inteligente de análise de feedbacks para consultorias utilizando **Inteligência Artificial Generativa**, automação de processos e dashboards em tempo real.
@@ -182,25 +183,27 @@ Envio do relatório por e-mail
 
 # 📸 Demonstração
 
-## Dashboard
+## 📸 Dashboard
 
-> Adicione aqui a imagem do Dashboard.
+O dashboard apresenta os principais indicadores em tempo real, incluindo satisfação dos clientes, ranking de consultores, filtros e gráficos interativos.
 
-```markdown
 ![Dashboard](images/dashboard.png)
-```
 
 ---
 
-## Workflow no n8n
+## ⚙ Workflow n8n
 
-> Adicione aqui a imagem do Workflow.
+Workflow responsável pela automação completa do processo de coleta, análise e geração dos feedbacks utilizando IA Generativa.
 
-```markdown
 ![Workflow](images/workflow.png)
-```
 
 ---
+
+## 📧 Relatório Automático
+
+Após a análise dos dados, o sistema envia automaticamente um relatório personalizado por e-mail.
+
+![Email](images/email.png)
 
 # 📈 Resultados
 
