@@ -1,158 +1,244 @@
 # 🚀 ClientPulse-AI
 
-Sistema inteligente de análise de feedbacks para consultorias utilizando IA Generativa, automação e dashboards em tempo real.
+Sistema inteligente de análise de feedbacks para consultorias utilizando **Inteligência Artificial Generativa**, automação de processos e dashboards em tempo real.
+
+O projeto automatiza todo o ciclo de avaliação do cliente, desde a coleta dos dados até a geração de insights estratégicos e envio automático de relatórios.
 
 ---
 
-## 📌 Problema
+# 📌 Problema
 
-Consultorias recebem dezenas de avaliações de clientes, mas normalmente a análise é manual, lenta e sujeita a erros.
+Consultorias recebem diversas avaliações diariamente. Em muitos casos, a análise dessas respostas é realizada manualmente, consumindo tempo e dificultando a identificação rápida de problemas e oportunidades de melhoria.
 
-O objetivo deste projeto é automatizar todo o processo de coleta, tratamento, análise e geração de insights.
+Além disso, consolidar indicadores, gerar feedbacks personalizados e acompanhar a evolução dos consultores exige um processo operacional complexo.
 
 ---
 
-## 🎯 Solução
+# 💡 Solução
+
+O ClientPulse-AI automatiza completamente esse fluxo.
 
 O sistema:
 
-- Coleta respostas de formulários automaticamente
-- Atualiza planilhas em tempo real
-- Limpa e trata os dados recebidos
-- Calcula score de satisfação automaticamente
-- Identifica riscos e oportunidades
-- Gera feedbacks personalizados com IA
-- Envia relatórios por e-mail
-- Atualiza dashboards automaticamente
+- 📥 Coleta respostas automaticamente pelo Google Forms
+- 📊 Atualiza a base de dados em tempo real
+- 🧹 Trata e padroniza os dados
+- ⭐ Calcula automaticamente o Score de Satisfação
+- 🤖 Utiliza IA Generativa para produzir feedbacks personalizados
+- ⚠️ Identifica riscos e oportunidades
+- 📈 Atualiza um Dashboard Inteligente
+- 📧 Envia automaticamente relatórios por e-mail
 
 ---
 
-## 🏗 Arquitetura
+# 🏗 Arquitetura do Sistema
 
-Formulário
-↓
-Google Sheets
-↓
-n8n Workflow
-↓
-Tratamento de Dados
-↓
-IA Generativa
-↓
-Relatório Inteligente
-↓
-Dashboard Streamlit
-↓
-Email Automático
+```mermaid
+flowchart LR
+
+subgraph Entrada
+A[📝 Google Forms]
+end
+
+subgraph Dados
+B[📄 Google Sheets]
+C[🧹 Tratamento dos Dados]
+D[⭐ Score Automático]
+end
+
+subgraph Automação
+E[⚙️ n8n Workflow]
+F{Nova avaliação?}
+end
+
+subgraph IA
+G[🤖 Gemini / OpenAI]
+H[💬 Feedback Inteligente]
+I[⚠️ Identificação de Riscos]
+J[📌 Recomendações]
+end
+
+subgraph Saída
+K[📄 Atualização da Planilha]
+L[📊 Dashboard Streamlit]
+M[📧 Envio Automático por Email]
+end
+
+A --> B
+B --> E
+E --> C
+C --> D
+D --> F
+
+F -->|Sim| G
+F -->|Não| B
+
+G --> H
+G --> I
+G --> J
+
+H --> K
+I --> K
+J --> K
+
+K --> L
+K --> M
+```
 
 ---
 
-## Fluxograma
+# ⚙️ Pipeline da Aplicação
 
-                 Google Forms
-                       │
-                       ▼
-               Google Sheets
-                       │
-                       ▼
-                n8n Workflow
-                       │
-        ┌──────────────┼──────────────┐
-        │              │              │
-        ▼              ▼              ▼
- Limpeza dos      Tratamento      Cálculo
-    Dados          dos Dados      de Score
-        │
-        ▼
-   IA Generativa
-(Gemini/OpenAI)
-        │
-        ▼
- Feedback Inteligente
-        │
-        ▼
- Atualização da Planilha
-        │
-        ▼
- Dashboard em Tempo Real
- (Python + Streamlit)
-        │
-        ▼
- E-mail Automático
+```text
+Cliente responde o formulário
 
- ---
- 
-## 🛠 Tecnologias Utilizadas
+↓
+
+Google Forms registra a avaliação
+
+↓
+
+Google Sheets recebe os dados
+
+↓
+
+Workflow do n8n inicia automaticamente
+
+↓
+
+Tratamento e limpeza dos dados
+
+↓
+
+Cálculo automático do Score
+
+↓
+
+IA analisa todo o contexto
+
+↓
+
+Feedback personalizado
+
+↓
+
+Atualização da planilha
+
+↓
+
+Dashboard atualizado automaticamente
+
+↓
+
+Envio do relatório por e-mail
+```
+
+---
+
+# 🛠 Tecnologias Utilizadas
 
 - Python
 - Streamlit
 - n8n
 - Google Sheets API
-- Gemini
-- OpenAI
 - Pandas
+- OpenAI API
+- Google Gemini
 - Gmail API
 
---- 
+---
 
-## 📊 Funcionalidades
+# 📊 Funcionalidades
 
-### Dashboard Inteligente
+## Dashboard Inteligente
 
 - Ranking automático de consultores
 - Média de satisfação
-- Filtros por consultor
+- Score geral
 - Atualização automática
+- Filtros por consultor
+- KPIs
 - Gráficos interativos
 
-### IA Generativa
+---
+
+## Inteligência Artificial
 
 - Feedback personalizado
-- Identificação de riscos
-- Recomendações automáticas
+- Identificação automática de riscos
+- Recomendações inteligentes
+- Resumo das avaliações
 
-### Automação
+---
 
-- Atualização da planilha
-- Geração de relatórios
+## Automação
+
+- Atualização automática da planilha
+- Processamento sem intervenção humana
+- Geração automática de relatórios
 - Envio automático de e-mails
 
 ---
 
-## 📸 Screenshots
+# 📸 Demonstração
 
-### Dashboard
+## Dashboard
 
-(Adicionar imagem aqui)
+> Adicione aqui a imagem do Dashboard.
 
-### Workflow n8n
-
-(Adicionar imagem aqui)
-
----
-
-## 📈 Resultados
-
-- Redução do trabalho manual
-- Análise automática de feedbacks
-- Identificação rápida de problemas
-- Melhor acompanhamento de consultores
+```markdown
+![Dashboard](images/dashboard.png)
+```
 
 ---
 
-## 🚀 Como Executar
+## Workflow no n8n
+
+> Adicione aqui a imagem do Workflow.
+
+```markdown
+![Workflow](images/workflow.png)
+```
+
+---
+
+# 📈 Resultados
+
+✅ Redução do trabalho manual
+
+✅ Processamento automático das avaliações
+
+✅ Feedbacks personalizados utilizando IA
+
+✅ Atualização automática do Dashboard
+
+✅ Identificação rápida de riscos
+
+✅ Envio automático de relatórios
+
+---
+
+# 🚀 Como executar
+
+Clone o repositório
 
 ```bash
 git clone https://github.com/DaviSantos-23/ClientPulse-AI.git
 ```
 
-Instalar dependências:
+Entre na pasta
+
+```bash
+cd ClientPulse-AI
+```
+
+Instale as dependências
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Executar:
+Execute a aplicação
 
 ```bash
 streamlit run app.py
@@ -160,10 +246,25 @@ streamlit run app.py
 
 ---
 
-## 👨‍💻 Autor
+# 🎯 Possíveis melhorias
 
-Davi Santos
+- Dashboard Web
+- Histórico completo dos consultores
+- Exportação em PDF
+- Painel administrativo
+- Notificações via Slack
+- Integração com CRM
 
-Ciência da Computação - UFS
+---
 
-Python | IA Generativa | Automação | Ciência de Dados
+# 👨‍💻 Autor
+
+## Davi Santos
+
+🎓 Ciência da Computação — UFS
+
+**Python • IA Generativa • Automação • Ciência de Dados • n8n • Streamlit**
+
+---
+
+⭐ Se este projeto foi útil, deixe uma estrela no repositório.
