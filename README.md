@@ -244,19 +244,6 @@ Execute a aplicação
 streamlit run app.py
 ```
 
----
-
-# 🎯 Possíveis melhorias
-
-- Dashboard Web
-- Histórico completo dos consultores
-- Exportação em PDF
-- Painel administrativo
-- Notificações via Slack
-- Integração com CRM
-
----
-
 # 👨‍💻 Autor
 
 ## Davi Santos
