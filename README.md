@@ -93,7 +93,7 @@ Email Automático
 - Pandas
 - Gmail API
 
----
+--- 
 
 ## 📊 Funcionalidades
 
