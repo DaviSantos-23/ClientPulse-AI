@@ -189,7 +189,7 @@ Envio do relatório por e-mail
 
 ---
 
-## 📈 Volume de Atendimentos por Consultor
+## 📈 Volume de Atendimentos por Consultor e Principais Objetivos da Consultoria
 
 ![Volume](images/volume-atendimentos.png)
 
@@ -226,6 +226,7 @@ Workflow responsável pela automação completa do processo de coleta, análise 
 Após a análise dos dados, o sistema envia automaticamente um relatório personalizado por e-mail.
 
 ![Email](images/email.png)
+![Email](images/email1.png)
 
 # 📈 Resultados 
 
