@@ -185,25 +185,25 @@ Envio do relatório por e-mail
 
 ## 📊 Dashboard Geral
 
-![Dashboard](images/dashboard-geral.png)
+![Dashboard](assets/images/dashboard-geral.png)
 
 ---
 
 ## 📈 Volume de Atendimentos por Consultor e Principais Objetivos da Consultoria
 
-![Volume](images/volume-atendimentos.png)
+![Volume](assets/images/volume-atendimentos.png)
 
 ---
 
 ## ⭐ Performance Média
 
-![Performance](images/performance.png)
+![Performance](assets/images/performance.png)
 
 ---
 
 ## 💡 Sugestões de Melhoria
 
-![Sugestões](images/sugestoes.png)
+![Sugestões](assets/images/sugestoes.png)
 
 ---
 
@@ -211,13 +211,13 @@ Envio do relatório por e-mail
 
 Workflow responsável pela automação completa do processo de coleta, análise e geração dos feedbacks utilizando IA Generativa.
 
-![Workflow](images/workflow.png)
+![Workflow](assets/images/workflow.png)
 
 ---
 
 ## 🎥 Demonstração
 
-![Demo](gifs/demo.gif)
+![Demo](assets/gifs/demo.gif)
 
 ---
 
@@ -225,8 +225,8 @@ Workflow responsável pela automação completa do processo de coleta, análise 
 
 Após a análise dos dados, o sistema envia automaticamente um relatório personalizado por e-mail.
 
-![Email](images/email.png)
-![Email](images/email1.png)
+![Email](assets/images/email.png)
+![Email](assets/images/email1.png)
 
 # 📈 Resultados 
 
@@ -267,7 +267,7 @@ pip install -r requirements.txt
 Execute a aplicação
 
 ```bash
-streamlit run app.py
+streamlit run src/app.py
 ```
 
 # 👨‍💻 Autor
