@@ -267,7 +267,7 @@ pip install -r requirements.txt
 Execute a aplicação
 
 ```bash
-streamlit run src/app.py
+streamlit run src/dashboard.py
 ```
 
 # 👨‍💻 Autor
