@@ -226,7 +226,9 @@ Workflow responsável pela automação completa do processo de coleta, análise 
 Após a análise dos dados, o sistema envia automaticamente um relatório personalizado por e-mail.
 
 ![Email](assets/images/email.png)
+![Email](assets/images/danilo.png)
 ![Email](assets/images/email1.png)
+![Email](assets/images/amanda.png)
 
 # 📈 Resultados 
 
